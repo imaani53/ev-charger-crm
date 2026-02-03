@@ -1,0 +1,66 @@
+🚨 READ THIS FIRST - UPLOAD INSTRUCTIONS 🚨
+
+CRITICAL: When uploading to GitHub, DO NOT copy the code block labels!
+
+❌ WRONG - Do NOT include these words:
+```json
+```javascript  
+```
+
+✅ CORRECT - Only copy the actual code
+
+────────────────────────────────────────────────────────
+
+HOW TO UPLOAD TO GITHUB:
+
+1. Go to: https://github.com/new
+2. Repository name: ev-charger-crm
+3. Make it PUBLIC
+4. Click "Create repository"
+5. Click "uploading an existing file"
+6. Drag ALL files from this folder:
+   - app/ (folder)
+   - package.json
+   - next.config.js
+   - tailwind.config.ts
+   - tsconfig.json
+   - postcss.config.js
+   - .gitignore
+7. Click "Commit changes"
+
+────────────────────────────────────────────────────────
+
+VERIFY IT WORKED:
+
+Your GitHub should show these at the TOP LEVEL:
+✅ app/
+✅ package.json
+✅ next.config.js
+✅ tailwind.config.ts
+✅ tsconfig.json
+✅ postcss.config.js
+
+NOT a folder called "ev-charger-FINAL" or "ev-charger-crm-deploy"
+
+────────────────────────────────────────────────────────
+
+DEPLOY TO NETLIFY:
+
+1. Go to: https://app.netlify.com
+2. Click "Add new site" → "Import an existing project"
+3. Click "Deploy with GitHub"
+4. Select your ev-charger-crm repository
+5. Build command: npm run build
+6. Publish directory: .next
+7. Click "Deploy site"
+8. DONE!
+
+────────────────────────────────────────────────────────
+
+IF IT STILL FAILS:
+
+Use the standalone HTML file instead:
+- Upload "ev-charger-crm-standalone.html" 
+- Rename it to "index.html"
+- Deploy manually to Netlify
+- NO BUILD REQUIRED!
